@@ -5,18 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Awesome Website</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
             color: white;
             text-align: center;
             margin: 0;
-            padding: 50px;
+        }
+        nav {
+            background: #1e1e1e;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff8a00;
         }
         h1 {
+            margin-top: 50px;
             font-size: 3em;
-            text-transform: uppercase;
-            letter-spacing: 2px;
             background: linear-gradient(45deg, #ff8a00, #e52e71);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -42,8 +61,14 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
     <h1>Welcome to My Website</h1>
-    <p>This is my first GitHub Pages website!</p>
+    <p>This is my first GitHub Pages website with a navigation bar!</p>
     <a href="https://github.com/pravee-n2005" class="btn">Check Out My GitHub</a>
 </body>
 </html>
